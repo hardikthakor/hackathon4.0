@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#292b3d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="pothole">#85A49F</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="garbage">#6F9294</color>
+    <color name="complaints">#5B8086</color>
+    <color name="coming1">#486F76</color>
+    <color name="coming2">#3C616A</color>
+    <color name="coming3">#2D515D</color>
+
+    <color name="backcolor">#244D61</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="subcolor">#fef96f</color>
+
+    <color name="trans">#000000FF</color>
+
+    <color name="action">#135ca9</color>
+
+    <color name="compBack">#9FB3CBf2</color>
+    <color name="compBack1">#fffffff2</color>
+    <color name="monumentbg">#9cbef4</color>
+
+</resources>

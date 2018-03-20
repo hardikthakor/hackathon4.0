@@ -1,0 +1,87 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Area:"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView3" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            tools:context="com.example.dell.authorityapp.ViewLocationAssigned"
+            />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Area Image"
+    android:textColor="#ffffff"
+    android:textSize="20dp"
+    android:layout_below="@+id/map"
+    android:id="@+id/tvarm"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:paddingLeft="150dp"
+            android:id="@+id/loc_imgA"
+            android:layout_below="@+id/tvarm"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/loc_imgA"
+            android:text="Work Update:"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/tvupdtpro"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:hint="Update work" />
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btncamera"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/update" />
+
+        <Button
+            android:id="@+id/btncamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvupdtpro"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/camera" />
+
+    </RelativeLayout>
+</ScrollView>

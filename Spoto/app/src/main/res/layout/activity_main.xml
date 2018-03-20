@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/loginbg"
+    android:weightSum="10"
+    tools:context="com.example.ht.citizenservice.MainActivity">
+
+    <!--
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+        -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="7.5"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <!--
+        <ImageButton
+            android:visibility="visible"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logingoogle"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:background="@drawable/leaderboardmedaltransparent"
+            android:id="@+id/bt_login"/>
+            -->
+
+        <Button
+            android:gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logingoogle"
+            android:id="@+id/bt_login"/>
+
+        <!--
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:id="@+id/bt_login" />
+            -->
+
+        <com.facebook.login.widget.LoginButton
+            android:visibility="visible"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/fb"/>
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt"
+            android:text="Login"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/tv"/>
+    <Button
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Force Crash!"
+        android:onClick="forceCrash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_signout"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"/>
+
+</LinearLayout>

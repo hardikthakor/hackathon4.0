@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blueopacity"
+            android:id="@+id/rl"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/loc_img1"
+                android:src="@drawable/ic_launcher_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@+id/loc_img1"
+                android:id="@+id/lt1"
+                android:text="Location:"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/lt1"
+                android:id="@+id/locTitle2"
+                android:textStyle="bold"
+                android:text="area name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/loc_img1"
+                android:text="Severity:"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/tvsev"
+                android:paddingTop="60dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvsev"
+                android:textStyle="bold"
+                android:text="type"
+                android:id="@+id/sever"
+                android:paddingTop="60dp"
+                android:textSize="20dp"/>
+
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_gravity="end"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnchat"
+            android:background="@drawable/chatlogo" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

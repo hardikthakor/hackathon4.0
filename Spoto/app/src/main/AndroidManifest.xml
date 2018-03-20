@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ht.citizenservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/spotofinal"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GridActv" />
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/labelProfile"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".CameraActv"
+            android:label="@string/labelUpload"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ImageUploadResponse"
+            android:label="@string/labelResponse"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="15af7fd04740bd65ce6500f25512a8f017e7c9e7" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Complaints"
+            android:label="@string/labelComplaints"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".LeaderBoard"
+            android:label="@string/labelLeaderboard"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimeLineViewActv"
+            android:label="@string/labelTimeline"
+            android:parentActivityName=".Complaints"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".XmppChat"
+            android:label="@string/labelChat"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+
+        <service android:name=".FireIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FireMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".FireBaseDataReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ALL_APPS" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ResponseNoti">
+            <intent-filter>
+                <action android:name="android.intent.action.ALL_APPS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WatsonChat"
+            android:label="@string/labelWatson"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".News"
+            android:label="@string/news"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".ViewNews"
+            android:label="@string/viewnews"
+            android:parentActivityName=".News"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".Category"
+            android:label="@string/category"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".Monument"
+            android:label="Monument"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".MonumentDescription"
+            android:label="About Monument"
+            android:parentActivityName=".Monument"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".NewsJaipur"
+            android:label="@string/news"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".JaipurDescription"
+            android:parentActivityName=".NewsJaipur"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".MonumentCameraActivity"
+            android:parentActivityName=".Monument"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".MonumentCameraResponse"
+            android:parentActivityName=".Monument"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".Hotelo"
+            android:label="Hotel"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppThemetrans" />
+        <activity
+            android:name=".HoteloView"
+            android:label="Hotel Details"
+            android:parentActivityName=".Hotelo"
+            android:theme="@style/AppThemetrans" />
+        <activity android:name=".ArMyActivity"></activity>
+    </application>
+
+</manifest>

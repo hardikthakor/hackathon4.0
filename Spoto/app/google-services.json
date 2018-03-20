@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "197710807993",
+    "firebase_url": "https://citizen-service-185512.firebaseio.com",
+    "project_id": "citizen-service-185512",
+    "storage_bucket": "citizen-service-185512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197710807993:android:a0c679498dbf6341",
+        "android_client_info": {
+          "package_name": "com.example.ht.citizenservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197710807993-2c00e25bgpka26eo5058jkjb32aspvbc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "197710807993-m5jgti3if485lnfo7eg2d7bsu77b5qqs.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "197710807993-j92v5r1jk1d6r90u34u03fn80jaami43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ht.citizenservice",
+            "certificate_hash": "4180e60f360a533cbf3109f04b21bc76915888bb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOfU-hnjubLK_SXJg6cRnkXRvT2uoa_c4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

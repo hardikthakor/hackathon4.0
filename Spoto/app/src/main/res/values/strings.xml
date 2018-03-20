@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Activity Label -->
+    <string name="labelUpload">Upload</string>
+    <string name="labelProfile">Profile</string>
+    <string name="labelResponse">Response</string>
+    <string name="labelComplaints">Complaints</string>
+    <string name="labelLeaderboard">LeaderBoard</string>
+    <string name="labelTimeline">TimeLine</string>
+    <string name="labelChat">Chat</string>
+    <string name="labelWatson">Spoto Bot</string>
+    <string name="viewnews">ViewNews</string>
+    <string name="news">News</string>
+    <string name="category">Category</string>
+
+    <string name="app_name">Spoto</string>
+
+    <!-- fb id -->
+    <string name="facebook_app_id">2025827094341108</string>
+
+    <!-- Activity -->
+    <string name="def">default</string>
+
+    <string name="garbageError">Image is not a garbage.....Capture garbage image</string>
+    <string name="potholeError">Image is not a pothole.....Capture pothole image</string>
+    <string name="captionPothole">Please capture image from pothole caption</string>
+    <string name="captionGarbage">Please capture image from garbage caption</string>
+    <string name="successResp">success</string>
+    <string name="duplicateResp">duplicate</string>
+    <string name="success">Your Request has been Successfully Placed</string>
+    <string name="duplicate">Your Request has been Already Been Placed by Another User</string>
+    <string name="error">Server is too busy please try later &#8230;</string>
+    <string name="fraud">Please take Real time image</string>
+    <string name="fraudcheck">fraud</string>
+    <!-- jaipur -->
+    <string name="Pothole">Pothole</string>
+    <string name="Garbage">Garbage</string>
+    <string name="Wrong">Wrong</string>
+    <string name="wrongMsg">Please Click a Pothole or Garbage Image</string>
+
+    <string name="imageLoadingFail">Image Loading Failed Try Again</string>
+
+    <!-- Mongo MainActv Insert Deepblue-->
+
+    <!-- Mongo LeaderBoard Deepblue-->
+    <string name="nameKey">profName</string>
+    <string name="pointsKey">points</string>
+    <string name="profurlKey">profUrl</string>
+    <string name="progressTitle">Loading</string>
+    <string name="progressMsg"> Please Wait &#8230;</string>
+
+    <!-- Mongo Complaints Deepblue-->
+
+    <!-- Mongo UserProfile Deepblue
+    <string name="prof_Ip">34.210.171.13</string>
+    <string name="prof_db">userDetails</string>
+    <string name="prof_col">data</string>
+    <string name="profEmailKey">profEmail</string>
+    -->
+
+    <!-- Arc Nav -->
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Actv text -->
+    <!-- TimeLineView -->
+    <string name="step1">Complaint Registered</string>
+    <string name="step2">Complaint Confirmed</string>
+    <string name="step3">Working on Complaint</string>
+    <string name="step4">Complaint Successfully Resolved</string>
+
+    <!-- Font -->
+
+    <!-- Watson -->
+    <string name="username">28381cf4-70f7-44d8-b42f-ed2e3819c72a</string>
+    <string name="password">LozDx46bJJBB</string>
+    <string name="workspace">840f33f2-74c7-4de6-bdf8-6b6bc754c11f</string>
+
+    <!-- url -->
+    <!-- complaint -->
+    <string name="complaint">http://52.230.17.234:8125/usercompaccept</string>
+    <!-- mainactivity -->
+    <string name="mainactv">http://52.230.17.234:8006/register</string>
+    <!-- leaderboard -->
+    <string name="leaderboard">http://52.230.17.234:8127/userdata</string>
+    <!-- userprof -->
+    <string name="userprof">http://52.230.17.234:8126/usercompdata</string>
+    <!-- camactv -->
+    <string name="allUrl">http://52.230.17.234:8778/detect</string>
+    <!-- News -->
+    <string name="newsurl">http://52.230.17.234:8413/all</string>
+    <!-- news jaipur -->
+    <string name="newsJaipur">http://34.201.133.222:8016/news</string>
+
+    <!-- no data -->
+    <string name="leaderboardnull">No Data Found &#8230;</string>
+    <string name="leaderboardinternet">No Data Found &#8230; </string>
+    <string name="leaderboardnodata">No Data Found &#8230;</string>
+    <string name="complaintsnull">No Complaints Found &#8230;</string>
+    <string name="complaintsinternet">No Complaints Found &#8230; </string>
+    <string name="complaintsnodata">No Complaints Found &#8230;</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="des5"> Built in 18th century by Maharaja Sawai Jai Singh II, the huge masonary instruments were used to study the movement of constellations and stars in the sky. Enormous sun-dial still provide accurate time, which are subject to daily corrections.</string>
+    <string name="des4">  <![CDATA[The Jal Mahal palace is an architectural showcase of the Rajput style of architecture (common in Rajasthan) on a grand scale. The building has a picturesque view of the lake itself but owing to its seclusion from land is equally the focus of a viewpoint from the Man Sagar Dam on the eastern side of the lake in front of the backdrop of the surrounding Nahargarh (\"tiger-abode\") hills. The palace, built in red sandstone, is a five storied building, of which four floors remain underwater when the lake is full and the top floor is exposed.]]></string>
+    <string name="des3">  <![CDATA[The fort, rugged and similar in structural design to the Amber Fort, is also known as Victory Fort. It has a length of 3 kilometres (1.9 mi) along the north–south direction and a width of 1 kilometre (0.62 mi). The fort features a cannon named \"Jaivana\", which was manufactured in the fort precincts and was then the world\'s largest cannon on wheels.]]></string>
+    <string name="des2">  This auditorium is one of the most famous venues of the city. It hosts some of the renowned international events and exhibits. The exhibition center boasts of its multifunctional and flexible areas and of its capability to host different kinds of events. So many visitors, organizer and exhibitor gather at the exhibition center to take the advantage of functional and flexible spaces build for them. The participants are matching their footsteps with growing needs of the industry. Birla Auditorium also organizes cultural programs and festivals. The participants will get very large parking space at the auditorium.</string>
+    <string name="des1">  The Amber Fort was built by ‘Raja Shri Maan Singh JI Saheb’ (Maan Singh I) (December 21, 1550 – July 6, 1614) in 16th century. Man Singh, one of the first war chiefs or the trusted general of the Emperor Akbar. Akbar included him among the ‘Navaratnas’, or the 9 (nava) gems (ratna) of the royal court. Man Singh began the construction of a fortress-palace of white and red sandstone i.e. Amber Fort in 1592. He was the Kacchwaha (Rajput) of King of Amber, a state later known as Jaipur. Nearby he ordered to set a small temple devoted to ‘Sheela Mata’, his patron goddess.</string>
+
+    <string name="latitude1">26.98556</string>
+    <string name="latitude2">26.90607</string>
+    <string name="latitude3">26.98514</string>
+    <string name="latitude4">26.95349</string>
+    <string name="latitude5">26.92482</string>
+
+    <string name="longitude1">75.85130</string>
+    <string name="longitude2">75.80573</string>
+    <string name="longitude3">75.84561</string>
+    <string name="longitude4">75.84607</string>
+    <string name="longitude5">75.82457</string>
+
+    <string name="time1">9.30 A.M.- 4.30 P.M.</string>
+    <string name="time2">9.00 A.M.- 8.00 P.M.</string>
+    <string name="time3">9.30 A.M.- 4.30 P.M.</string>
+    <string name="time4">9.00 A.M.- 5.00 P.M.</string>
+    <string name="time5">9.30 A.M.- 4.30 P.M.</string>
+
+    <string name="title5">Jantar Mantar</string>
+    <string name="title4">Jal Mahal</string>
+    <string name="title3">Jaigarh Fort</string>
+    <string name="title2">Birla Auditorium</string>
+    <string name="title1">Amber Palace</string>
+
+    <string name="start_recording">Record</string>
+    <string name="stop_recording">Stop</string>
+
+
+    <!--
+     src lang
+        en-IN
+        es-ES
+        fr-FR
+        mr-IN
+        te-IN
+        hi-IN
+        gu-IN
+        lang
+        ++++++++++++++++++++++++++++++++++++++++
+        gu
+        hi
+        en
+        mr
+        fr
+    -->
+
+    <string name="maxstar_samples">MaxstAR Samples</string>
+    <string name="image_tracker">Image Tracker</string>
+    <string name="instant_tracker">Instant Tracker</string>
+    <string name="visual_slam">Visual SLAM</string>
+    <string name="object_tracker">Object Tracker</string>
+    <string name="code_scan">QR/BarCode Scanner</string>
+    <string name="camera_configuration">Camera Configuration</string>
+    <string name="see_through_hmd_rendering">See-through HMD Rendering</string>
+    <string name="camera_direction">Direction</string>
+    <string name="camera_direction_rear">Rear</string>
+    <string name="camera_direction_front">Front</string>
+    <string name="flash_light">Flash Light</string>
+    <string name="flash_on">On</string>
+    <string name="flash_off">Off</string>
+    <string name="camera_flip">Flip</string>
+    <string name="horizontal_flip">Horizontal</string>
+    <string name="vertical_flip">Vertical</string>
+    <string name="focus">Focus</string>
+    <string name="focus_continuous">Continuous</string>
+    <string name="focus_auto">Auto</string>
+    <string name="white_balance">White Balance</string>
+    <string name="white_balance_auto">Auto</string>
+    <string name="white_balance_lock">Lock</string>
+    <string name="app_key">WlsBl1AIh3w4e8uyXFJl7rJr+kUDWc6HCa1kKts6MeQ=</string>
+    <string name="camera_resolution">Camera resolution</string>
+    <string name="sd_resolution">640x480</string>
+    <string name="hd_resolution">1280x720</string>
+    <string name="start_slam">Start</string>
+    <string name="stop_slam">Stop</string>
+    <string name="save_map">Save map</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="code_format">Code Format : </string>
+    <string name="code_value">Code Value : </string>
+    <string name="now_scanning">Scanning....</string>
+    <string name="extended_tracking">Extended Tracking</string>
+    <string name="normal_tracking">Normal Tracking</string>
+    <string name="multi_tracking">Multi Tracking</string>
+    <string name="no_map_files_exist">No map files exist. Please create map file via Visual SLAM menu</string>
+    <string name="start_tracking">Start tracking</string>
+    <string name="stop_tracking">Stop tracking</string>
+    <string name="camera_open_fail">Camera open fails. Please check camera permission is allowed</string>
+    <string name="map_select">Select map file</string>
+    <string name="resize_camera_view">Resize camera view</string>
+
+</resources>

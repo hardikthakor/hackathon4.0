@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Reacto</string>
+    <string name="title_activity_view_location">Map</string>
+    <string name="title_activity_accept">Map</string>
+    <string name="title_activity_view_location_assigned">Map</string>
+
+    <string name="username">1876c729-5196-4da2-ab70-36eaffe423dc</string>
+    <string name="password">yHQl7SWzKhQR</string>
+    <!-- <string name="workspace">d22522d1-4a6e-40f4-9b60-ecc8b4066a00</string> -->
+
+    <string name="workspace">a6000ad5-781c-41c1-8fd2-c0cbaaeb05fe</string>
+
+    <string name="leaderboard">http://52.230.17.234:8885/authdata</string>
+
+    <string name="nameKey">authUserName</string>
+    <string name="pointsKey">points</string>
+    <string name="profurlKey">profUrl</string>
+    <string name="progressTitle">Loading</string>
+    <string name="progressMsg"> Please Wait &#8230;</string>
+</resources>

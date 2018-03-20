@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.example.dell.authorityapp.selectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout"
+        android:paddingTop="25dp">
+        <Button
+            android:id="@+id/btnST"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="60dp"
+            android:layout_above="@+id/imageView"
+            android:layout_alignLeft="@+id/btnAT"
+            android:layout_alignStart="@+id/btnAT"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sfinal"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnAT"
+            android:layout_width="150dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/afinal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout2"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/linearLayout">
+
+    <Button
+        android:id="@+id/leader"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/leader" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/chat" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout2"
+        android:paddingTop="30dp">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/news"
+            android:id="@+id/news"
+            />
+    </LinearLayout>
+
+</LinearLayout>

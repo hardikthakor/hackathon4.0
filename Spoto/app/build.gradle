@@ -1,0 +1,84 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    google()
+}
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.example.ht.citizenservice"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.android.gms:play-services-maps:11.6.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    compile 'com.google.firebase:firebase-messaging:11.6.0'
+    compile 'com.google.android.gms:play-services-auth:11.6.0'
+    compile 'com.google.android.gms:play-services:11.6.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.amazonaws:aws-android-sdk-core:2.2.0'
+    compile 'com.amazonaws:aws-android-sdk-ddb:2.2.0'
+    compile 'com.amazonaws:aws-android-sdk-cognito:2.6.5'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.6.5'
+    compile 'com.muddzdev:styleabletoast:1.0.9'
+    compile 'com.facebook.android:facebook-android-sdk:4.29.0'
+    compile 'com.github.vipulasri:timelineview:1.0.5'
+    compile 'com.daasuu:BubbleLayout:1.2.0'
+    compile 'org.mongodb:mongo-java-driver:3.0.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.rom4ek:arcnavigationview:1.0.3'
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.7.2'
+    compile 'org.igniterealtime.smack:smack-tcp:4.1.0'
+    compile 'org.igniterealtime.smack:smack-android-extensions:4.1.0'
+    compile 'org.igniterealtime.smack:smack-android:4.1.0'
+    compile 'gun0912.ted:tedpermission:1.0.0'
+    implementation 'org.igniterealtime.smack:smack-android:4.1.0'
+    implementation 'com.microsoft.azure.android:azure-storage-android:0.8.0@aar'
+    annotationProcessor 'com.google.cloud:google-cloud-translate:1.14.0'
+
+    // ui
+    compile 'com.github.bassaer:chatmessageview:1.8.7'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true;
+    }
+    compile('com.amazonaws:aws-android-sdk-auth-google:2.6.0@aar') { transitive = true; }
+    compile('com.amazonaws:aws-android-sdk-auth-ui:2.6.0@aar') { transitive = true; }
+}
+apply plugin: 'com.google.gms.google-services'
