@@ -26,4 +26,8 @@ Tourism in India, and especially in the serene state Rajasthan which is filled w
 
 
 ### Technology Stack:
-Azure, Mongo Db, Redis ,Android, IBM Watson, Gcloud Apis, Fabrics, 
+Azure, Mongo Db, Redis ,Android, IBM Watson, Gcloud Apis, Fabrics
+
+### Visualization Link
+http://52.187.6.152/Tourism/relation_btwn_people_train.html
+http://52.187.6.152/connected-devices/index.html
